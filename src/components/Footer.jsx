@@ -59,7 +59,7 @@ MadAboutCoding isn’t just a name — it’s a mindset          </p>
           <div className="space-y-2 text-sm">
             <div className="flex items-center">
               <MapPin className="w-4 h-4 mr-2" />
-              <span>Bangalore, Karnataka</span>
+              <span>Mumbai, Maharashtra</span>
             </div>
             {/* <div className="flex items-center">
               <Phone className="w-4 h-4 text-primary mr-2" />
