@@ -18,11 +18,27 @@ const Footer = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const socialLinks = [
-    { icon: Linkedin, href: "#http://www.linkedin.com/in/madaboutcoding-team-630b5238b", label: "Linkedin", color: "hover:text-green-400" },
-    { icon: ExternalLink, href: "#https://www.notion.so/Mad-About-Coding-291894eb0d3980cf8e50f7446fff2778", label: "Notion", color: "hover:text-pink-400" },
-    { icon: Mail, href: "#https://mail.google.com/mail/?view=cm&fs=1&to=madaboutcoding.official@gmail.com&su=Inquiry&body=Hi%20there%2C", label: "Email", color: "hover:text-blue-400" },
-  ];
+const socialLinks = [
+  {
+    icon: Linkedin,
+    href: "http://www.linkedin.com/in/madaboutcoding-team-630b5238b",
+    label: "Linkedin",
+    color: "hover:text-green-400",
+  },
+  {
+    icon: ExternalLink,
+    href: "https://www.notion.so/Mad-About-Coding-291894eb0d3980cf8e50f7446fff2778",
+    label: "Notion",
+    color: "hover:text-pink-400",
+  },
+  {
+    icon: Mail,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=madaboutcoding.official@gmail.com&su=Inquiry&body=Hi%20there%2C",
+    label: "Email",
+    color: "hover:text-blue-400",
+  },
+];
+
 
   return (
     <footer className="bg-[#0f0f0f] text-white py-16 px-6 lg:px-8">
