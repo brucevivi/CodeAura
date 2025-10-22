@@ -60,7 +60,7 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p variants={fadeIn("", "", 0.1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          These are some of he services that we had done for our clients. Each project is a unique
+          These are some of the services that we had done for our clients. Each project is a unique
           blend of creativity and technical expertise, tailored to meet specific needs and deliver
           exceptional results. Explore our diverse portfolio to see how we bring ideas to life
           through innovative solutions and meticulous craftsmanship.
