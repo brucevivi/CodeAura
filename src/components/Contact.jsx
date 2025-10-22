@@ -119,7 +119,7 @@ const Contact = () => {
 
     {/* LinkedIn */}
     <motion.a
-      href="https://www.linkedin.com/in/YOUR_USERNAME"
+      href="http://www.linkedin.com/in/madaboutcoding-team-630b5238b"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ y: -5 }}

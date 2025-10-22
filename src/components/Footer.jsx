@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#https://www.linkedin.com/in/YOUR_USERNAME", label: "Linkedin", color: "hover:text-green-400" },
+    { icon: Linkedin, href: "#http://www.linkedin.com/in/madaboutcoding-team-630b5238b", label: "Linkedin", color: "hover:text-green-400" },
     { icon: ExternalLink, href: "#https://www.notion.so/Mad-About-Coding-291894eb0d3980cf8e50f7446fff2778", label: "Notion", color: "hover:text-pink-400" },
     { icon: Mail, href: "#https://mail.google.com/mail/?view=cm&fs=1&to=madaboutcoding.official@gmail.com&su=Inquiry&body=Hi%20there%2C", label: "Email", color: "hover:text-blue-400" },
   ];
