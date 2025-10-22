@@ -42,7 +42,6 @@ const Navbar = () => {
           isSecondary ? 'secondary' : 'white'
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
-        <button onClick={toggleResume}>Resume</button>
       </li>
     </ul>
   );
@@ -89,3 +88,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+

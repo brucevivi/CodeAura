@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { Mail, Linkedin, ExternalLink } from "lucide-react";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -81,7 +81,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          setConfirmation("Thank you! I will get back to you as soon as possible.");
+          setConfirmation("Thank you! we will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -93,7 +93,7 @@ const Contact = () => {
       .catch((error) => {
         setLoading(false);
         console.error(error);
-        setConfirmation("Something went wrong. Please try again. :/");
+        setConfirmation("Something went wrong. Please try again. :)");
       });
   };
 
@@ -101,7 +101,49 @@ const Contact = () => {
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact Me</h3>
+        <h3 className={styles.sectionHeadText}>Contact us</h3>
+
+  <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Email */}
+<motion.a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=madaboutcoding.official@gmail.com&su=Inquiry&body=Hi%20there%2C"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ y: -5 }}
+  className="bg-white/5 p-6 rounded-xl border border-white/20 flex flex-col items-center justify-center gap-4 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+  aria-label="Email us"
+>
+      <Mail className="w-10 h-10 text-white" />
+      <p className="text-white text-center text-sm">Email</p>
+    </motion.a>
+
+    {/* LinkedIn */}
+    <motion.a
+      href="https://www.linkedin.com/in/YOUR_USERNAME"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ y: -5 }}
+      className="bg-white/5 p-6 rounded-xl border border-white/20 flex flex-col items-center justify-center gap-4 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+      aria-label="LinkedIn"
+    >
+      <Linkedin className="w-10 h-10 text-white" />
+      <p className="text-white text-center text-sm">Connect on LinkedIn</p>
+    </motion.a>
+
+    {/* Notion */}
+    <motion.a
+      href="https://www.notion.so/Mad-About-Coding-291894eb0d3980cf8e50f7446fff2778"
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ y: -5 }}
+      className="bg-white/5 p-6 rounded-xl border border-white/20 flex flex-col items-center justify-center gap-4 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+      aria-label="Notion"
+    >
+      <ExternalLink className="w-10 h-10 text-white" />
+      <p className="text-white text-center text-sm">View on Notion</p>
+    </motion.a>
+  </div>
+
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <InputField

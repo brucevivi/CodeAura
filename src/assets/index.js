@@ -8,6 +8,11 @@ import python from "./tech-stack/python.png";
 import c from "./tech-stack/c.png";
 import cpp from "./tech-stack/cpp.png";
 import java from "./tech-stack/java.png";
+import computer from "./tech-stack/computer.png";
+import rocket from "./tech-stack/rocket.png";
+import insight from "./tech-stack/insight.png";
+import model from "./tech-stack/model.png";
+import movie from "./tech-stack/movie.png";
 
 // Import project images
 import weatherpedia from "./projects/WeatherPedia.png";
@@ -26,12 +31,18 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.png";
+import angular from "./tech/angular.png";
+import docker from "./tech/docker.png";
+import openai from "./tech/openai.png";
+import kubernetes from "./tech/kubernetes.png";
+import net from "./tech/net.png";
 
 // Import common assets
 import logo from "./logo.jpeg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import image from "./image.png";
 
 export {
   mathwork,
@@ -39,6 +50,12 @@ export {
   python,
   c,
   cpp,
+  computer,
+  image,
+  rocket, 
+  insight,
+  model,
+  movie,
   java,
   github,
   css,
@@ -59,4 +76,9 @@ export {
   menu,
   close,
   eduskill,
+  angular,
+  docker,
+  kubernetes,
+  openai,
+  net
 };
